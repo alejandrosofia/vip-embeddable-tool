@@ -14,8 +14,10 @@
         br(ng-if="selectedTheme != '' && selectedTheme != 'No Theme'")
         span(ng-if="selectedTheme != '' && selectedTheme != 'No Theme'")     theme: '{{ themeUrl(selectedTheme) }}',
         br
-        span(ng-if="officialOnly")     officialOnly: true,
-        br(ng-if="officialOnly")
+        span(ng-if="officialOnly == false")     officialOnly: false,
+        br(ng-if="officialOnly == false")
+        span(ng-if="officialOnly == true")     officialOnly: true,
+        br(ng-if="officialOnly == true")
         span(ng-if="title")     title: '{{ title }}',
         br(ng-if="title")
         span(ng-if="subtitle")     subtitle: '{{ subtitle }}',
