@@ -296,6 +296,8 @@ module.exports = (function() {
       str += multiSiteEnd;
     }
 
+    str += '<div class="legend-row"><div id="google-maps-block"></div><span id="regular-label">' + _.get(assets, 'text.headers.registeredVoterAddress', 'Voter Address') + '</span></div>';
+
     str += '</div>';
 
     return str;

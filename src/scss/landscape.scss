@@ -99,7 +99,8 @@
       #red-block,
       #blue-block,
       #green-block,
-      #grey-block {
+      #grey-block,
+      #google-maps-block {
         background-size: contain;
         background-repeat: no-repeat;
         display: table-cell;
@@ -119,6 +120,9 @@
       }
       #grey-block {
         background-image: url(https://tool.votinginfoproject.org/images/gray-marker.png);
+      }
+      #google-maps-block {
+        background-image: url(https://tool.votinginfoproject.org/images/google-maps-marker.png);
       }
     }
     #location {
