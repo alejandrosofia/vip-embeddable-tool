@@ -568,19 +568,19 @@ module.exports = View.extend({
 
     var bounds = new google.maps.LatLngBounds();
 
-    if (_.has(this, 'data.locations[0].position')) {
+    if (_.has(this, 'data.locations[0].position') && !_.isEmpty(_.get(this, 'data.locations[0].address.zip'))) {
       bounds.extend(_.get(this, 'data.locations[0].position'));
     }
-    if (_.has(this, 'data.locations[1].position')) {
+    if (_.has(this, 'data.locations[1].position') && !_.isEmpty(_.get(this, 'data.locations[1].address.zip'))) {
       bounds.extend(_.get(this, 'data.locations[1].position'));
     }
-    if (_.has(this, 'data.locations[2].position')) {
+    if (_.has(this, 'data.locations[2].position') && !_.isEmpty(_.get(this, 'data.locations[2].address.zip'))) {
       bounds.extend(_.get(this, 'data.locations[2].position'));
     }
-    if (_.has(this, 'data.locations[3].position')) {
+    if (_.has(this, 'data.locations[3].position') && !_.isEmpty(_.get(this, 'data.locations[3].address.zip'))) {
       bounds.extend(_.get(this, 'data.locations[3].position'));
     }
-    if (_.has(this, 'data.locations[4].position')) {
+    if (_.has(this, 'data.locations[4].position') && !_.isEmpty(_.get(this, 'data.locations[4].address.zip'))) {
       bounds.extend(_.get(this, 'data.locations[4].position'));
     }
     if (_.has(this, 'data.home.position')) {
