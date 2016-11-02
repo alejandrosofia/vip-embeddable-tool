@@ -32,8 +32,13 @@ module.exports = View.extend({
 
   resizer: function () {
     // constrain container to parent width
-    if (this.$container.parent().width() < this.$container.width()) {
-      this.$container.width(this.$container.parent().width());
+    if (this.modal) {
+      if (this.$container.parent().width() < this.$container.width()) {
+        this.$container.width(this.$container.parent().width() - 2);
+      }
+    } else {
+      this.$container.width(this.$container.parent().width() - 2);
+      this.$container.height(this.$container.parent().height() - 2);
     }
   },
 
