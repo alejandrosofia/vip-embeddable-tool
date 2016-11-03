@@ -706,6 +706,8 @@ module.exports = View.extend({
         if (callback) {
           callback(location);
         }
+      } else if (status == google.maps.GeocoderStatus.ZERO_RESULTS) {
+        callback(location);
       } else {
         if (error) {
           error(status);
@@ -932,10 +934,12 @@ module.exports = View.extend({
 
     async.each(locations, function(location, step) {
       this._geocode(location, function(geocodedLocation) {
-        var dist = google.maps.geometry.spherical.computeDistanceBetween(destination.position, geocodedLocation.position);
-        if (dist < closestDist) {
-          closestDist = dist;
-          closestLocation = location;
+        if (_.has(destination, 'position') && _.has(geocodedLocation, 'position')) {
+          var dist = google.maps.geometry.spherical.computeDistanceBetween(destination.position, geocodedLocation.position);
+          if (dist < closestDist) {
+            closestDist = dist;
+            closestLocation = location;
+          }
         }
         step();
       });
