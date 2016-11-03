@@ -35,7 +35,8 @@
         top: 50%;
       }
       #error-feedback-link {
-        left: 92%;
+        left: 0;
+        text-align: right;
         transform: translateY(50%);
         -ms-transform: translateY(50%);
         margin-top: -5px;
@@ -86,6 +87,7 @@
       -ms-transform: box-shadow(2px 2px 8px rgba(0, 0, 0, 0.25));
       font-size: 13px;
       padding: 10px;
+      display: block;
       .legend-row {
         display: table-row;
         margin: 10px 0;
@@ -146,6 +148,7 @@
     }
     #polling-location-info-close,
     #location-legend-close {
+      display: block;
       position: absolute;
       cursor: pointer;
       right: 10px;
