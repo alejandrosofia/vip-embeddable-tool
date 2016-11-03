@@ -157,6 +157,14 @@ For internationalization and language customization, supply a link to the `json`
   }
 }
 ```
+
+# IFrame embed
+```HTML
+<iframe width="640" height="480" src="https://tool.votinginfoproject.org/iframe-embed.html" frameborder="none"></iframe>
+```
+
+Not all parameters are currently supported. We are currently working to add support for all parameters.
+
 # Source code instructions
 ## Setup Instructions
 
