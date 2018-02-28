@@ -180,3 +180,23 @@ Not all parameters are currently supported. We are currently working to add supp
 1. Download [PhantomJS](http://phantomjs.org/download.html)
 2. `bundle`
 3. `rspec spec/examples.rb`
+
+# Deployment
+## Setup
+You'll need to create a JSON file for the environment you are deploying to with the name format: `aws-<environment>.json`. For example, `aws-staging.json`.
+
+Inside the file you need keys and values for `key`, `secret`, `bucket` and `region`. The first two should be credentials that can upload to the `bucket`, and the `region` should usually always be `us-east-1`.
+
+## Deployment
+Once you have the config file setup, you can build and then deploy as follows:
+
+`./node_modules/.bin/gulp build`
+`./node_modules/.bin/gulp deploy-staging`
+`./node_modules/.bin/gulp deploy-production`
+
+You don't have to deploy both, just whichever environment you're interested in at the moment.
+
+## Cache Invalidation
+You'll also need to go into the AWS console for CloudFront and run an invalidation for the distribution fronting tools.votinginfoproject.org if you're doing a production deployment.
+
+
