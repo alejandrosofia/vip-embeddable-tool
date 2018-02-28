@@ -39,7 +39,7 @@ module.exports = (function() {
         officialOnly: true,
         alert: null,
         test: false,
-        key: 'AIzaSyCLNlhlWcKcozqYRq9M1_j25GLUzqrJxH8',
+        key: 'AIzaSyDC2aNf2BeQs038ARrw0kZNbuq9FfKUqCA',
         title: 'Voting Information Project',
         subtitle: '',
         logo: 'https://tool.votinginfoproject.org/images/voting-information-project.png',
