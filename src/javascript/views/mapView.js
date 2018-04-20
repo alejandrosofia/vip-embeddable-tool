@@ -76,7 +76,8 @@ module.exports = View.extend({
     weekday: 'long',
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
+    timeZone: 'UTC'
   },
 
   _MAP_STYLES: [{
@@ -193,7 +194,7 @@ module.exports = View.extend({
     // them and give them to the date object--decrementing month, because
     // it's 0-indexed. Then convert it to a locale string
     var dateArray = _.get(options, 'data.election.electionDay').split('-');
-    var date = new Date(dateArray[0], dateArray[1] - 1, dateArray[2]);
+    var date = new Date(Date.UTC(dateArray[0], dateArray[1] - 1, dateArray[2]));
 
     _.set(options, 'data.election.dateForCalendar', date.getMonth() + 1 + '/' + date.getDate() + '/' + date.getFullYear());
 
