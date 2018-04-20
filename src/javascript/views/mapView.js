@@ -196,7 +196,7 @@ module.exports = View.extend({
     var dateArray = _.get(options, 'data.election.electionDay').split('-');
     var date = new Date(Date.UTC(dateArray[0], dateArray[1] - 1, dateArray[2]));
 
-    _.set(options, 'data.election.dateForCalendar', date.getMonth() + 1 + '/' + date.getDate() + '/' + date.getFullYear());
+    _.set(options, 'data.election.dateForCalendar', dateArray[1] + '/' + dateArray[2] + '/' + dateArray[0]);
 
     var newDate = date.toLocaleDateString(options.language, this._DATE_DISPLAY_OPTIONS);
 
