@@ -304,6 +304,8 @@ module.exports = View.extend({
       .css('margin', '10px 0 0')
       .insertBefore('#current-location span');
 
+    $('#mail-in-voting-buttons').addClass("hidden");
+
     this.autocomplete = new google.maps.places.Autocomplete(newInput[0], {
       types: ['address'],
       componentRestrictions: { country: 'us' }
