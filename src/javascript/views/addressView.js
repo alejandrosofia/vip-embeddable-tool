@@ -304,12 +304,15 @@ module.exports = View.extend({
       .css('margin', '10px 0 0')
       .insertBefore('#current-location span');
 
+    $('#mail-in-voting-buttons').addClass("hidden");
+
     this.autocomplete = new google.maps.places.Autocomplete(newInput[0], {
       types: ['address'],
       componentRestrictions: { country: 'us' }
     });
 
-    google.maps.event.addListener(this.autocomplete, 'place_changed', that.currentLocationAutocompleteListener.bind(that, response));
+    google.maps.event.addListener(this.autocomplete, 'place_changed',
+                                  this.currentLocationAutocompleteListener.bind(this, this.response));
   },
 
   selectLanguage: function () {
