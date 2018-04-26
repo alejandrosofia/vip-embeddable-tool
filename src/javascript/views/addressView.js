@@ -309,7 +309,8 @@ module.exports = View.extend({
       componentRestrictions: { country: 'us' }
     });
 
-    google.maps.event.addListener(this.autocomplete, 'place_changed', that.currentLocationAutocompleteListener.bind(that, response));
+    google.maps.event.addListener(this.autocomplete, 'place_changed',
+                                  this.currentLocationAutocompleteListener.bind(this, this.response));
   },
 
   selectLanguage: function () {
