@@ -23,11 +23,11 @@ module.exports = {
       "registeredAddress": "Continuar"
     },
     "headers": {
-      "registeredVoterAddress": "Dirección registrada del votante",
+      "registeredVoterAddress" : "Dirección del Votante",
       "edit": "Editar",
       "elections": "Elecciones",
-      "pollingLocation": "Ubicación de la votación",
-      "voterResources": "Recursos del votante",
+      "pollingLocation": "Ubicación de votación",
+      "voterResources" : "Recursos para Votantes",
       "ballotInformation": "Información de la boleta"
     },
     "resources": {

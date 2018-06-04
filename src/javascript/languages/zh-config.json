@@ -44,7 +44,7 @@
         "correspondenceAddress" : "通訊地址"
       },
       "moreResources" : {
-        "title" : "添加多源資訊",
+        "title" : "更多資源",
         "electionInformationUrl" : "選舉資訊",
         "registrationConfirmationUrl" : "註冊確認",
         "absenteeVotingInformationUrl" : " 缺席投票資訊",
