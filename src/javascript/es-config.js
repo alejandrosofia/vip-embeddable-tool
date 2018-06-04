@@ -10,7 +10,7 @@ module.exports = {
     },
     "addressNotFound": {
       "title": "No se encontró información",
-      "text": "Ingresó:<h1>1234 Main St<br>New York, NY 10000</h1> No se encontró ninguna información sobre las elecciones para la dirección que ha puesto, asegúrese de que ingresó los datos correctamente.",
+      "text": "Ingresó:<h1>1234 Main St<br>New York, NY 10000</h1> No pudimos localizar ninguna información en conexión con su dirección. Por favor revise con su oficina electoral local para obtener información actualizada y completa.",
       "button": "Inténtelo nuevamente"
     },
     "multipleElections": {
