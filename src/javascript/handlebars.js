@@ -304,7 +304,7 @@ module.exports = (function() {
   }
 
   var resourcesExist = function(data, options) {
-    if (_.has(data, 'state[0].local_jurisdiction') || _.has(data, 'state[0].electionAdministration')) {
+    if (_.has(data, 'state[0].local_jurisdiction') || _.has(data, 'state[0].electionAdministrationBody')) {
       return options.fn(this);
     } else {
       return options.inverse(this);
