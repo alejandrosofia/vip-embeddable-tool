@@ -7,3 +7,4 @@ cms/*.html
 cms/css
 aws-staging.json
 aws-production.json
+.node-version

@@ -3,6 +3,11 @@ Voting Information Tool
 
 The Voting Information Project is developing a white-label, easily embedded web tool that will provide voters with ballot and polling place information based on their registered address.
 
+## JS Environment
+
+This project requires Node 7 (7.10.0 seems to be a good choice) and will not work on later versions. Check out [nodenv](https://github.com/nodenv/nodenv) for a tool to manage
+multiple node versions and environments on your system.
+
 # Embedding Instructions
 ## Adding the Voter Information Tool to your page
 Append the following code to your website where you want the Voting Information Tool to appear:
