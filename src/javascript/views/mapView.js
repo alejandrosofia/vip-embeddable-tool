@@ -194,13 +194,10 @@ module.exports = View.extend({
     // them and give them to the date object--decrementing month, because
     // it's 0-indexed. Then convert it to a locale string
     var dateArray = _.get(options, 'data.election.electionDay').split('-');
-    var date = new Date(Date.UTC(dateArray[0], dateArray[1] - 1, dateArray[2]));
+    var simpleFormattedDate = dateArray[1] + '/' + dateArray[2] + '/' + dateArray[0];
+    _.set(options, 'data.election.dateForCalendar', simpleFormattedDate);
 
-    _.set(options, 'data.election.dateForCalendar', dateArray[1] + '/' + dateArray[2] + '/' + dateArray[0]);
-
-    var newDate = date.toLocaleDateString(options.language, this._DATE_DISPLAY_OPTIONS);
-
-    _.set(options, 'data.election.electionDay', newDate);
+    _.set(options, 'data.election.electionDay', simpleFormattedDate);
 
     var contests = _.get(options, 'data.contests');
     _.set(options, 'data.contests', _.sortBy(contests, this._contestComparator))
