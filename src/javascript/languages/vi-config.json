@@ -7,7 +7,7 @@
     },
     "about" : {
       "title" : "Tìm hiểu Về Công cụ Thông tin Bỏ phiếu",
-      "content" : "Dự án Thông tin Bỏ phiếu (Voting Information Project - VIP) kết nối cử tri với thông tin căn bản mà cử tri cần để quyết định cho lá phiếu của mình, ví dụ như đi bầu ở đâu và chọn lựa gì trên lá phiếu. Đây là một dự án của hội từ thiện The Pew Charitable Trusts, hãng Google, và nhiều tiểu bang Hoa kỳ. Được đưa ra năm 2008, Dự án Thông tin Bỏ phiếu (VIP) dùng bởi nhân viên bầu cử của tiểu bang và địa phương để cung cấp thông tin bầu cử hơp lệ cho công dân bằng nhiều cách khác nhau bao gồm Giao diện Lập trình Ứng dụng (API) Google Civic Information. Công cụ Thông tin Bỏ phiếu là một trong nhiều công cụ cung câp bởi Dự án Thông tin Bỏ phiếu (VIP), để bảo đảm thông tin bầu cử hợp lệ sẳn sàng cho cử tri trước và trong Ngày Bầu cử."
+      "content" : "Trang mạng này là một sáng kiến của Dự Án Thông Tin Bầu Cử (VIP), một quan hệ đối tác giữa các viên chức bầu cử tiểu bang và các Hoạt Động Dân Chủ nhằm kết nối cử tri với thông tin bầu cử mà họ cần để bỏ phiếu. Ra mắt vào năm 2008, VIP làm việc với các viên chức bầu cử tiểu bang và địa phương để cung cấp thông tin bầu cử chính thức và cập nhật cho các công dân."
     },
     "footer" : {
       "text" : "Để có thông tin cập nhật đầy đủ, tham vấn với nhân viên bầu cử ở địa phương của quí vị."
