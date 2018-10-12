@@ -19,7 +19,7 @@
     "browser-sync": "^2.9.3",
     "browserify": "^11.1.0",
     "cssify": "^0.7.0",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.0.1",
     "gulp-changed": "",
     "gulp-cloudfront-invalidate": "^0.1.4",
@@ -49,8 +49,8 @@
     "async": "^1.5.2",
     "console-polyfill": "^0.2.2",
     "fastclick": "",
-    "jquery": "^2.1.4",
-    "lodash": "^4.0.0",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.5",
     "tiny-binary-search": "^1.0.2"
   }
 }
